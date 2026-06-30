@@ -1,1 +1,1 @@
-site criado para treinar ofuscação de código, neste caso java script.
+para site criado para treinar ofuscação de código, neste caso java script.
