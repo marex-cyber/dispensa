@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Curso de CyberSecurity: UC01483</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#ccffcc;
+    font-family:Arial, Helvetica, sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+/* Caixa do título */
+.caixa{
+    background:white;
+    width:650px;              /* largura fixa */
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0px 5px 12px rgba(0,0,0,0.2);
+    margin-bottom:25px;
+    box-sizing:border-box;
+}
+
+.caixa h1{
+    margin:0;
+    font-size:34px;
+    font-weight:bold;
+    color:#004d00;
+}
+
+/* Botão */
+.botao{
+    background:white;
+    color:#004d00;
+
+    width:220px;
+    height:60px;
+
+    border:none;
+    border-radius:15px;
+
+    font-size:22px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0px 5px 12px rgba(0,0,0,0.2);
+
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#f4f4f4;
+    transform:scale(1.05);
+}
+
+.mensagem{
+    margin-top:25px;
+    font-size:24px;
+    font-weight:bold;
+    color:#004d00;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="caixa">
+        <h1 id="titulo"></h1>
+    </div>
+
+    <button class="botao" onclick="apresentacao()">
+        Apresentação
+    </button>
+
+    <div id="mensagem" class="mensagem"></div>
+
+</div>
+
+<script>
+
+document.getElementById("titulo").innerHTML =
+"Curso de CyberSecurity: UC01483";
+
+function apresentacao(){
+
+    document.getElementById("mensagem").innerHTML =
+    "Olá André, sou o Mario Tomé :)";
+
+}
+
+</script>
+
+</body>
+</html>
